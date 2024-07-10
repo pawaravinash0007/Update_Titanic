@@ -14,7 +14,7 @@ st.title("Titanic Passenger Survival Prediction")
 st.markdown("This model predicts whether a Titanic passenger survived or not based on input features.")
 
 # Section for user inputs
-st.header("Traveler Details")ss
+st.header("Traveler Details")
 
 # Layout using columns
 col1, col2 = st.columns(2)
