@@ -1,13 +1,13 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
-import pickle
+import joblib
 #from prediction import predict  # Import the predict function from your prediction module
 
-grid_search = pickle.load(open("avi_model.pkl", "rb"))
+grid_search = joblib.load(open("avi_model.pkl", "rb"))
 
 def predict(data):
-    grid_search = pickle.load(open("avi_model.pkl", "rb"))
+    grid_search = joblib.load(open("avi_model.pkl", "rb"))
     return grid_search.predict(data)
 # Page title and description
 st.title("Titanic Passenger Survival Prediction")
